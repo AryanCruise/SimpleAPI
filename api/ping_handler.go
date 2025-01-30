@@ -14,3 +14,7 @@ func PingHandler(c *gin.Context){
 func TestEnv(c *gin.Context){
 	c.String(http.StatusOK, "Hello Environment variable : %s", os.Getenv("TEST_ENV"))
 }
+
+func HomePage(c *gin.Context){
+	c.String(http.StatusOK, "Hello World!")
+}

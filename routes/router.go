@@ -9,4 +9,5 @@ import (
 func SetupRoutes(r *gin.Engine){
 	r.GET("/ping", api.PingHandler)
 	r.GET("/env", api.TestEnv)
+	r.GET("/", api.HomePage)
 }
